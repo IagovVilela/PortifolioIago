@@ -9,6 +9,20 @@
   
   body {
     font-family: 'Inter', system-ui, sans-serif;
+    overflow-x: hidden; /* Previne scroll horizontal */
+  }
+
+  /* Melhorar a experiência mobile */
+  @media (max-width: 768px) {
+    body {
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    
+    /* Ajustar padding para mobile */
+    .section-padding {
+      padding: 2rem 1rem;
+    }
   }
 }
 
@@ -27,5 +41,31 @@
   
   .container-max {
     @apply max-w-7xl mx-auto;
+  }
+
+  /* Mobile-specific utilities */
+  .mobile-menu {
+    @apply fixed inset-0 z-40 bg-white/95 backdrop-blur-sm;
+  }
+
+  .mobile-nav-item {
+    @apply block w-full text-left px-4 py-3 text-lg font-medium text-gray-700 hover:text-primary-600 hover:bg-primary-50 transition-colors;
+  }
+
+  /* Melhorar touch targets para mobile */
+  @media (max-width: 768px) {
+    .btn-primary,
+    .btn-secondary {
+      @apply py-4 px-6 text-base min-h-[48px]; /* Touch target mínimo de 44px */
+    }
+    
+    /* Ajustar espaçamento entre elementos */
+    .space-y-4 > * + * {
+      margin-top: 1rem;
+    }
+    
+    .space-y-6 > * + * {
+      margin-top: 1.5rem;
+    }
   }
 }

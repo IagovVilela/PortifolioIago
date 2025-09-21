@@ -41,19 +41,20 @@ const Header: React.FC = () => {
           : 'bg-transparent'
       }`}
     >
-      <nav className="container-max section-padding">
+      <nav className="container-max px-4 py-4">
         <div className="flex items-center justify-between">
-          <div className="text-2xl font-bold text-primary-600">
+          {/* Logo - Responsivo */}
+          <div className="text-lg sm:text-xl md:text-2xl font-bold text-primary-600 truncate max-w-[200px] sm:max-w-none">
             Iago Vilela Ventura
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden lg:flex items-center space-x-6">
             {navItems.map((item) => (
               <button
                 key={item.name}
                 onClick={() => scrollToSection(item.href)}
-                className="text-secondary-700 hover:text-primary-600 transition-colors duration-200 font-medium"
+                className="text-secondary-700 hover:text-primary-600 transition-colors duration-200 font-medium text-sm"
               >
                 {item.name}
               </button>
@@ -63,8 +64,9 @@ const Header: React.FC = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2"
+            className="lg:hidden p-2 -mr-2"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label="Toggle menu"
           >
             {isMenuOpen ? (
               <X className="h-6 w-6 text-secondary-700" />
@@ -76,18 +78,18 @@ const Header: React.FC = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden mt-4 py-4 border-t border-secondary-200">
-            <div className="flex flex-col space-y-4">
+          <div className="lg:hidden mt-4 py-4 border-t border-secondary-200 bg-white/95 backdrop-blur-sm rounded-lg">
+            <div className="flex flex-col space-y-3">
               {navItems.map((item) => (
                 <button
                   key={item.name}
                   onClick={() => scrollToSection(item.href)}
-                  className="text-left text-secondary-700 hover:text-primary-600 transition-colors duration-200 font-medium py-2"
+                  className="text-left text-secondary-700 hover:text-primary-600 transition-colors duration-200 font-medium py-3 px-2 rounded-lg hover:bg-primary-50"
                 >
                   {item.name}
                 </button>
               ))}
-              <div className="pt-4 border-t border-secondary-200">
+              <div className="pt-3 border-t border-secondary-200">
                 <LanguageSelector />
               </div>
             </div>
