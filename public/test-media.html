@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Mídia</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .media-item { margin: 20px 0; padding: 10px; border: 1px solid #ccc; }
+        img, video { max-width: 300px; max-height: 200px; }
+    </style>
+</head>
+<body>
+    <h1>Teste de Carregamento de Mídia</h1>
+    
+    <div class="media-item">
+        <h3>Foto de Perfil</h3>
+        <img src="/Images/FotoPerfil.jpeg" alt="Foto de Perfil" onload="console.log('Foto carregada!')" onerror="console.log('Erro ao carregar foto!')">
+    </div>
+    
+    <div class="media-item">
+        <h3>Vídeo Calculadora</h3>
+        <video controls width="300" height="200">
+            <source src="/Images/ProjetoCalculadora.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos.
+        </video>
+    </div>
+    
+    <div class="media-item">
+        <h3>Vídeo Plano Cartesiano</h3>
+        <video controls width="300" height="200">
+            <source src="/Images/ProjetoPlanoCartesiano.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos.
+        </video>
+    </div>
+    
+    <div class="media-item">
+        <h3>Vídeo Paint</h3>
+        <video controls width="300" height="200">
+            <source src="/Images/ProjetoPaint.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos.
+        </video>
+    </div>
+    
+    <script>
+        console.log('Teste de mídia iniciado');
+        console.log('Verifique o console para mensagens de carregamento');
+    </script>
+</body>
+</html>

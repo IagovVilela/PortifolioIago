@@ -1,0 +1,149 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "home": {
+    "greeting": "Hello, I'm",
+    "name": "Iago Vilela Ventura",
+    "title": "Full Stack Developer",
+    "subtitle": "Transforming ideas into digital solutions",
+    "description": "IT Technician passionate about technology and web development. Specialist in C#, ASP.NET, React and databases, always seeking to combine creativity and logic to solve real problems.",
+    "knowMore": "Learn more",
+    "seeProjects": "View projects"
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "Passionate about technology and development, always seeking to learn and evolve",
+    "story": {
+      "title": "My Journey",
+      "p1": "I am a professional graduated as an IT Technician from UNIVAP (2024), passionate about technology and web development. My journey began with programming in languages like Java, C#, Python, JavaScript and PHP, always seeking to combine creativity and logic to solve real problems.",
+      "p2": "I have experience in ASP.NET Web Forms and Windows Forms, working since February 2025 as a Programmer at APTIV, where I develop and maintain applications to support internal processes, dashboards and integration with relational databases.",
+      "p3": "My passion for web development led me to explore modern frameworks, such as React, and front-end libraries, in addition to deepening my knowledge in relational and non-relational databases. I believe that the combination between robust back-end and dynamic front-end is essential to deliver complete, scalable and intuitive solutions."
+    },
+    "achievements": {
+      "title": "Achievements",
+      "graduation": "IT Technician",
+      "graduationDesc": "UNIVAP College - 2024",
+      "job": "Programmer",
+      "jobDesc": "APTIV - 2025",
+      "projects": "3+ Projects",
+      "projectsDesc": "Successfully developed",
+      "experience": "2+ Years",
+      "experienceDesc": "Professional experience"
+    },
+    "experience": {
+      "title": "Professional Experience",
+      "aptiv": {
+        "period": "February/2025 - Current",
+        "title": "Programmer",
+        "company": "APTIV",
+        "description": "Development in ASP.NET Web Forms and Windows Forms, maintenance of internal systems, management reports and SQL Server integration."
+      },
+      "gestorpro": {
+        "period": "2023 - 2024",
+        "title": "Systems Development Intern",
+        "company": "GestorPro",
+        "description": "System maintenance and improvement, internal process automation and dashboard creation for service providers."
+      }
+    }
+  },
+  "skills": {
+    "title": "Technical Skills",
+    "subtitle": "Technologies and tools I master to create complete and modern solutions",
+    "categories": {
+      "all": "All",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "database": "Database",
+      "tools": "Tools"
+    },
+    "languages": {
+      "title": "Languages and Technologies",
+      "description": "Hover over the icons to see details about my proficiency in each technology"
+    },
+    "methodology": {
+      "title": "Learning Methodology",
+      "description": "I always seek to stay updated with the latest technologies through practical projects, specialized courses and active participation in the developer community.",
+      "study": "Continuous Study",
+      "studyDesc": "Courses and official documentation",
+      "projects": "Practical Projects",
+      "projectsDesc": "Application in real projects",
+      "community": "Community",
+      "communityDesc": "Contribution and networking"
+    },
+    "level": {
+      "expert": "Expert",
+      "advanced": "Advanced",
+      "intermediate": "Intermediate",
+      "basic": "Basic",
+      "proficiency": "proficiency"
+    }
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "subtitle": "Some of the projects I developed to demonstrate my skills and experience",
+    "calculator": {
+      "title": "Digital Calculator",
+      "description": "Application that simulates a digital calculator, with basic mathematical operations and intuitive interface.",
+      "technologies": ["C#", "Windows Forms", ".NET Framework"]
+    },
+    "cartesian": {
+      "title": "Cartesian Plane",
+      "description": "System for graphical representation of points and functions in a cartesian plane with interactive visualization.",
+      "technologies": ["Java", "Computer Graphics", "Swing"]
+    },
+    "paint": {
+      "title": "Paint Image Editor",
+      "description": "Application that simulates a simple graphics editor, allowing drawing and manipulating shapes with basic tools.",
+      "technologies": ["C#", "Windows Forms", "GDI+"]
+    },
+    "actions": {
+      "code": "Code",
+      "video": "Video",
+      "demo": "Demo"
+    },
+    "cta": {
+      "title": "Interested in seeing more projects?",
+      "description": "Visit my GitHub to explore all projects, contributions and complete source code.",
+      "button": "View on GitHub"
+    }
+  },
+  "contact": {
+    "title": "Let's Talk",
+    "subtitle": "I'm always open to new opportunities and interesting projects. Get in touch and let's create something amazing together!",
+    "info": {
+      "title": "Contact Information",
+      "email": "Email",
+      "phone": "Phone",
+      "location": "Location"
+    },
+    "social": {
+      "title": "Social Networks"
+    },
+    "form": {
+      "title": "Send a Message",
+      "name": "Name",
+      "namePlaceholder": "Your full name",
+      "email": "Email",
+      "emailPlaceholder": "your@email.com",
+      "subject": "Subject",
+      "subjectPlaceholder": "What is the subject of your message?",
+      "message": "Message",
+      "messagePlaceholder": "Tell me about your project or idea...",
+      "send": "Send Message",
+      "sending": "Sending...",
+      "success": "Message sent successfully! I will contact you soon.",
+      "error": "Error sending message. Try again or contact by email."
+    }
+  },
+  "footer": {
+    "description": "Full Stack Developer passionate about technology and web development, specialist in C#, ASP.NET and React.",
+    "quickLinks": "Quick Links",
+    "connect": "Connect",
+    "rights": "All rights reserved."
+  }
+}

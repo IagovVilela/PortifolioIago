@@ -1,0 +1,149 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Acerca",
+    "skills": "Habilidades",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "home": {
+    "greeting": "Hola, soy",
+    "name": "Iago Vilela Ventura",
+    "title": "Desarrollador Full Stack",
+    "subtitle": "Transformando ideas en soluciones digitales",
+    "description": "Técnico en Informática apasionado por la tecnología y el desarrollo web. Especialista en C#, ASP.NET, React y bases de datos, siempre buscando unir creatividad y lógica para resolver problemas reales.",
+    "knowMore": "Conocer más",
+    "seeProjects": "Ver proyectos"
+  },
+  "about": {
+    "title": "Acerca de Mí",
+    "subtitle": "Apasionado por la tecnología y el desarrollo, siempre buscando aprender y evolucionar",
+    "story": {
+      "title": "Mi Trayectoria",
+      "p1": "Soy un profesional graduado como Técnico en Informática por UNIVAP (2024), apasionado por la tecnología y el desarrollo web. Mi trayectoria comenzó con programación en lenguajes como Java, C#, Python, JavaScript y PHP, siempre buscando unir creatividad y lógica para resolver problemas reales.",
+      "p2": "Tengo experiencia en ASP.NET Web Forms y Windows Forms, trabajando desde febrero de 2025 como Programador en APTIV, donde desarrollo y mantengo aplicaciones para apoyar procesos internos, dashboards e integración con bases de datos relacionales.",
+      "p3": "Mi pasión por el desarrollo web me llevó a explorar frameworks modernos, como React, y bibliotecas para front-end, además de profundizar en bases de datos relacionales y no relacionales. Creo que la combinación entre back-end robusto y front-end dinámico es esencial para entregar soluciones completas, escalables e intuitivas."
+    },
+    "achievements": {
+      "title": "Logros",
+      "graduation": "Técnico en Informática",
+      "graduationDesc": "Colegio UNIVAP - 2024",
+      "job": "Programador",
+      "jobDesc": "APTIV - 2025",
+      "projects": "3+ Proyectos",
+      "projectsDesc": "Desarrollados con éxito",
+      "experience": "2+ Años",
+      "experienceDesc": "Experiencia profesional"
+    },
+    "experience": {
+      "title": "Experiencia Profesional",
+      "aptiv": {
+        "period": "Febrero/2025 - Actual",
+        "title": "Programador",
+        "company": "APTIV",
+        "description": "Desarrollo en ASP.NET Web Forms y Windows Forms, mantenimiento de sistemas internos, reportes gerenciales e integración con SQL Server."
+      },
+      "gestorpro": {
+        "period": "2023 - 2024",
+        "title": "Pasante en Desarrollo de Sistemas",
+        "company": "GestorPro",
+        "description": "Mantenimiento y mejora del sistema, automatización de procesos internos y creación de dashboards para proveedores de servicios."
+      }
+    }
+  },
+  "skills": {
+    "title": "Habilidades Técnicas",
+    "subtitle": "Tecnologías y herramientas que domino para crear soluciones completas y modernas",
+    "categories": {
+      "all": "Todas",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "database": "Base de Datos",
+      "tools": "Herramientas"
+    },
+    "languages": {
+      "title": "Lenguajes y Tecnologías",
+      "description": "Pasa el mouse sobre los íconos para ver detalles sobre mi dominio en cada tecnología"
+    },
+    "methodology": {
+      "title": "Metodología de Aprendizaje",
+      "description": "Siempre busco mantenerme actualizado con las últimas tecnologías a través de proyectos prácticos, cursos especializados y participación activa en la comunidad de desarrolladores.",
+      "study": "Estudio Continuo",
+      "studyDesc": "Cursos y documentación oficial",
+      "projects": "Proyectos Prácticos",
+      "projectsDesc": "Aplicación en proyectos reales",
+      "community": "Comunidad",
+      "communityDesc": "Contribución y networking"
+    },
+    "level": {
+      "expert": "Experto",
+      "advanced": "Avanzado",
+      "intermediate": "Intermedio",
+      "basic": "Básico",
+      "proficiency": "de dominio"
+    }
+  },
+  "projects": {
+    "title": "Proyectos Destacados",
+    "subtitle": "Algunos de los proyectos que desarrollé para demostrar mis habilidades y experiencia",
+    "calculator": {
+      "title": "Calculadora Digital",
+      "description": "Aplicación que simula una calculadora digital, con operaciones matemáticas básicas e interfaz intuitiva.",
+      "technologies": ["C#", "Windows Forms", ".NET Framework"]
+    },
+    "cartesian": {
+      "title": "Plano Cartesiano",
+      "description": "Sistema para representación gráfica de puntos y funciones en un plano cartesiano con visualización interactiva.",
+      "technologies": ["Java", "Computación Gráfica", "Swing"]
+    },
+    "paint": {
+      "title": "Editor de Imágenes Paint",
+      "description": "Aplicación que simula un editor gráfico simple, permitiendo dibujar y manipular formas con herramientas básicas.",
+      "technologies": ["C#", "Windows Forms", "GDI+"]
+    },
+    "actions": {
+      "code": "Código",
+      "video": "Vídeo",
+      "demo": "Demo"
+    },
+    "cta": {
+      "title": "¿Interesado en ver más proyectos?",
+      "description": "Visita mi GitHub para explorar todos los proyectos, contribuciones y código fuente completo.",
+      "button": "Ver en GitHub"
+    }
+  },
+  "contact": {
+    "title": "Hablemos",
+    "subtitle": "Siempre estoy abierto a nuevas oportunidades y proyectos interesantes. ¡Ponte en contacto y creemos algo increíble juntos!",
+    "info": {
+      "title": "Información de Contacto",
+      "email": "Email",
+      "phone": "Teléfono",
+      "location": "Ubicación"
+    },
+    "social": {
+      "title": "Redes Sociales"
+    },
+    "form": {
+      "title": "Enviar un Mensaje",
+      "name": "Nombre",
+      "namePlaceholder": "Tu nombre completo",
+      "email": "Email",
+      "emailPlaceholder": "tu@email.com",
+      "subject": "Asunto",
+      "subjectPlaceholder": "¿Cuál es el asunto de tu mensaje?",
+      "message": "Mensaje",
+      "messagePlaceholder": "Cuéntame sobre tu proyecto o idea...",
+      "send": "Enviar Mensaje",
+      "sending": "Enviando...",
+      "success": "¡Mensaje enviado con éxito! Te contactaré pronto.",
+      "error": "Error al enviar mensaje. Inténtalo de nuevo o contacta por email."
+    }
+  },
+  "footer": {
+    "description": "Desarrollador Full Stack apasionado por la tecnología y el desarrollo web, especialista en C#, ASP.NET y React.",
+    "quickLinks": "Enlaces Rápidos",
+    "connect": "Conectar",
+    "rights": "Todos los derechos reservados."
+  }
+}
