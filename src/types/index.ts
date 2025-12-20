@@ -7,6 +7,7 @@ export interface Project {
   githubUrl: string;
   liveUrl?: string;
   videoUrl?: string;
+  translationKey?: string;
 }
 
 export interface Skill {

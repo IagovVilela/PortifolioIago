@@ -86,15 +86,20 @@
   "projects": {
     "title": "Projetos Destacados",
     "subtitle": "Alguns dos projetos que desenvolvi para demonstrar minhas habilidades e experiência",
-    "calculator": {
-      "title": "Calculadora Digital",
-      "description": "Aplicação que simula uma calculadora digital, com operações matemáticas básicas e interface intuitiva.",
-      "technologies": ["C#", "Windows Forms", ".NET Framework"]
+    "reviewweb": {
+      "title": "ReviewWEB - Plataforma de Gestão de Avaliações",
+      "description": "Plataforma completa de gestão de avaliações desenvolvida para Ben Sheridan. Permite que empresas gerenciem sua reputação online de forma estratégica, coletando avaliações por meio de páginas públicas personalizadas e aplicando fluxos inteligentes conforme a nota recebida. Inclui dashboard com métricas em tempo real, notificações automáticas, exportação de dados e interface bilíngue com Dark Mode.",
+      "technologies": ["Laravel 9", "PHP 8.2+", "MySQL", "Blade", "Tailwind CSS", "Chart.js", "Google Maps API"]
     },
-    "cartesian": {
-      "title": "Plano Cartesiano",
-      "description": "Sistema para representação gráfica de pontos e funções em um plano cartesiano com visualização interativa.",
-      "technologies": ["Java", "Computação Gráfica", "Swing"]
+    "rifaflow": {
+      "title": "RifaFlow - Sistema de Gerenciamento de Rifas",
+      "description": "Sistema completo de gerenciamento de rifas desenvolvido para RifaFlow Brasil com funcionalidades avançadas e integração em tempo real. Inclui gestão completa de reservas, controle de status, sistema de busca e filtros avançados, exportação de dados em CSV, sincronização em tempo real e dashboard com estatísticas. Interface responsiva e intuitiva otimizada para mobile e desktop.",
+      "technologies": ["React.js", "Tailwind CSS", "Node.js", "Express", "Supabase", "PostgreSQL"]
+    },
+    "finantech": {
+      "title": "FinanTech Solutions - Gerenciador de Gastos",
+      "description": "Solução moderna e completa para gestão financeira empresarial. Sistema desenvolvido em React com cadastro de transações, gráficos dinâmicos para análise mensal e por categoria, exportação para CSV e PDF, busca inteligente, painel de metas financeiras, histórico de alterações e autenticação. Visual moderno com animações, glassmorphism, responsividade e modo escuro automático.",
+      "technologies": ["React", "Tailwind CSS", "Recharts", "jsPDF", "html2canvas", "React Toastify"]
     },
     "paint": {
       "title": "Editor de Imagens Paint",

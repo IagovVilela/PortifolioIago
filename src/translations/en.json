@@ -86,15 +86,20 @@
   "projects": {
     "title": "Featured Projects",
     "subtitle": "Some of the projects I developed to demonstrate my skills and experience",
-    "calculator": {
-      "title": "Digital Calculator",
-      "description": "Application that simulates a digital calculator, with basic mathematical operations and intuitive interface.",
-      "technologies": ["C#", "Windows Forms", ".NET Framework"]
+    "reviewweb": {
+      "title": "ReviewWEB - Review Management Platform",
+      "description": "Complete review management platform developed for Ben Sheridan. Allows companies to strategically manage their online reputation by collecting reviews through customized public pages and applying intelligent flows based on the rating received. Includes real-time metrics dashboard, automatic notifications, data export and bilingual interface with Dark Mode.",
+      "technologies": ["Laravel 9", "PHP 8.2+", "MySQL", "Blade", "Tailwind CSS", "Chart.js", "Google Maps API"]
     },
-    "cartesian": {
-      "title": "Cartesian Plane",
-      "description": "System for graphical representation of points and functions in a cartesian plane with interactive visualization.",
-      "technologies": ["Java", "Computer Graphics", "Swing"]
+    "rifaflow": {
+      "title": "RifaFlow - Raffle Management System",
+      "description": "Complete raffle management system developed for RifaFlow Brasil with advanced features and real-time integration. Includes complete reservation management, status control, advanced search and filter system, CSV data export, real-time synchronization and statistics dashboard. Responsive and intuitive interface optimized for mobile and desktop.",
+      "technologies": ["React.js", "Tailwind CSS", "Node.js", "Express", "Supabase", "PostgreSQL"]
+    },
+    "finantech": {
+      "title": "FinanTech Solutions - Expense Manager",
+      "description": "Modern and complete solution for business financial management. System developed in React with transaction registration, dynamic charts for monthly and category analysis, CSV and PDF export, intelligent search, financial goals panel, change history and authentication. Modern visual with animations, glassmorphism, responsiveness and automatic dark mode.",
+      "technologies": ["React", "Tailwind CSS", "Recharts", "jsPDF", "html2canvas", "React Toastify"]
     },
     "paint": {
       "title": "Paint Image Editor",

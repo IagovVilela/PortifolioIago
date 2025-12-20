@@ -21,11 +21,23 @@ const Projects: React.FC = () => {
   });
 
   const openVideo = (project: any) => {
+    const getTranslatedTitle = () => {
+      if (!project.translationKey) return project.title;
+      const translated = t(`projects.${project.translationKey}.title`);
+      return translated !== `projects.${project.translationKey}.title` ? translated : project.title;
+    };
+    
+    const getTranslatedDescription = () => {
+      if (!project.translationKey) return project.description;
+      const translated = t(`projects.${project.translationKey}.description`);
+      return translated !== `projects.${project.translationKey}.description` ? translated : project.description;
+    };
+    
     setSelectedVideo({
       isOpen: true,
       videoUrl: project.videoUrl,
-      title: project.title,
-      description: project.description
+      title: getTranslatedTitle(),
+      description: getTranslatedDescription()
     });
   };
 
@@ -135,11 +147,21 @@ const Projects: React.FC = () => {
               {/* Project Content */}
               <div className="p-6">
                 <h3 className="text-xl font-bold text-secondary-900 mb-3 group-hover:text-primary-600 transition-colors">
-                  {project.title}
+                  {project.translationKey 
+                    ? (() => {
+                        const translated = t(`projects.${project.translationKey}.title`);
+                        return translated !== `projects.${project.translationKey}.title` ? translated : project.title;
+                      })()
+                    : project.title}
                 </h3>
                 
                 <p className="text-secondary-600 mb-4 line-clamp-3">
-                  {project.description}
+                  {project.translationKey 
+                    ? (() => {
+                        const translated = t(`projects.${project.translationKey}.description`);
+                        return translated !== `projects.${project.translationKey}.description` ? translated : project.description;
+                      })()
+                    : project.description}
                 </p>
 
                 {/* Technologies */}
