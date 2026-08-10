@@ -1,7 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ChevronDown, Code, Database, Smartphone } from 'lucide-react';
+import { ChevronDown, Code, Database, Smartphone, Linkedin, Building2 } from 'lucide-react';
 import { useTranslation } from '../../contexts/TranslationContext';
+import { socialLinks } from '../../data/social';
 
 const Home: React.FC = () => {
   const { t } = useTranslation();
@@ -85,6 +86,33 @@ const Home: React.FC = () => {
                 className="btn-secondary inline-flex items-center justify-center"
               >
                 {t('home.seeProjects')}
+              </a>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 1.15 }}
+              className="mt-6 flex flex-wrap gap-3 justify-center lg:justify-start"
+            >
+              <a
+                href={socialLinks.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-sm font-medium text-secondary-700 hover:text-primary-600 transition-colors"
+              >
+                <Linkedin className="h-4 w-4" />
+                {t('home.linkedin')}
+              </a>
+              <span className="text-secondary-300">·</span>
+              <a
+                href={socialLinks.energon}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-sm font-medium text-secondary-700 hover:text-primary-600 transition-colors"
+              >
+                <Building2 className="h-4 w-4" />
+                {t('home.company')}
               </a>
             </motion.div>
           </motion.div>

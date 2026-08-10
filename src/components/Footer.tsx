@@ -1,6 +1,7 @@
 import React from 'react';
-import { Github, Linkedin, Mail, MapPin } from 'lucide-react';
+import { Github, Linkedin, Mail, MapPin, Building2 } from 'lucide-react';
 import { useTranslation } from '../contexts/TranslationContext';
+import { socialLinks } from '../data/social';
 
 const Footer: React.FC = () => {
   const { t } = useTranslation();
@@ -54,23 +55,35 @@ const Footer: React.FC = () => {
             <h3 className="text-xl font-bold mb-4">{t('footer.connect')}</h3>
             <div className="flex space-x-4">
               <a
-                href="https://github.com/IagovVilela"
+                href={socialLinks.github}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="GitHub"
                 className="bg-secondary-800 hover:bg-primary-600 p-3 rounded-lg transition-colors"
               >
                 <Github className="h-5 w-5" />
               </a>
               <a
-                href="https://www.linkedin.com/feed/?trk=sem-ga_campid.12619604099_asid.149519181115_crid.725790844702_kw.linkedin_d.c_tid.kwd-148086543_n.g_mt.e_geo.9100218"
+                href={socialLinks.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="LinkedIn"
                 className="bg-secondary-800 hover:bg-primary-600 p-3 rounded-lg transition-colors"
               >
                 <Linkedin className="h-5 w-5" />
               </a>
               <a
-                href="mailto:iagovventura@gmail.com"
+                href={socialLinks.energon}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Energon"
+                className="bg-secondary-800 hover:bg-primary-600 p-3 rounded-lg transition-colors"
+              >
+                <Building2 className="h-5 w-5" />
+              </a>
+              <a
+                href={socialLinks.email}
+                aria-label="Email"
                 className="bg-secondary-800 hover:bg-primary-600 p-3 rounded-lg transition-colors"
               >
                 <Mail className="h-5 w-5" />

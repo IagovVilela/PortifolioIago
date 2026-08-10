@@ -14,6 +14,13 @@ const About: React.FC = () => {
       description: t('about.experience.aptiv.description')
     },
     {
+      year: t('about.experience.energon.period'),
+      title: t('about.experience.energon.title'),
+      company: t('about.experience.energon.company'),
+      description: t('about.experience.energon.description'),
+      link: 'https://energon.up.railway.app'
+    },
+    {
       year: t('about.experience.gestorpro.period'),
       title: t('about.experience.gestorpro.title'),
       company: t('about.experience.gestorpro.company'),
@@ -129,7 +136,20 @@ const About: React.FC = () => {
                     <div className="bg-white p-6 rounded-lg shadow-lg border border-primary-100">
                       <div className="text-primary-600 font-semibold text-sm mb-2">{exp.year}</div>
                       <h4 className="text-lg font-bold text-secondary-900 mb-2">{exp.title}</h4>
-                      <div className="text-primary-600 font-medium mb-3">{exp.company}</div>
+                      <div className="text-primary-600 font-medium mb-3">
+                        {'link' in exp && exp.link ? (
+                          <a
+                            href={exp.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="hover:underline"
+                          >
+                            {exp.company}
+                          </a>
+                        ) : (
+                          exp.company
+                        )}
+                      </div>
                       <p className="text-secondary-600">{exp.description}</p>
                     </div>
                   </div>
