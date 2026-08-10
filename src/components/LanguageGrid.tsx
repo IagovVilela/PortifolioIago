@@ -64,8 +64,22 @@ const LanguageGrid: React.FC = () => {
       name: 'React',
       icon: '⚛️',
       description: 'Biblioteca JavaScript para construção de interfaces de usuário',
-      level: 75,
+      level: 80,
       color: '#61DAFB'
+    },
+    {
+      name: 'Next.js',
+      icon: '▲',
+      description: 'Framework React para aplicações web modernas com SSR e App Router',
+      level: 75,
+      color: '#000000'
+    },
+    {
+      name: 'TypeScript',
+      icon: '📘',
+      description: 'Superset tipado do JavaScript para aplicações mais robustas',
+      level: 75,
+      color: '#3178C6'
     },
     {
       name: 'ASP.NET',
@@ -73,6 +87,13 @@ const LanguageGrid: React.FC = () => {
       description: 'Framework Microsoft para desenvolvimento de aplicações web',
       level: 85,
       color: '#512BD4'
+    },
+    {
+      name: 'Node.js',
+      icon: '🟢',
+      description: 'Runtime JavaScript para APIs e aplicações backend',
+      level: 75,
+      color: '#339933'
     },
     {
       name: 'VBA',
@@ -85,7 +106,7 @@ const LanguageGrid: React.FC = () => {
       name: 'Git',
       icon: '📚',
       description: 'Sistema de controle de versão para gerenciamento de código',
-      level: 80,
+      level: 85,
       color: '#F05032'
     }
   ];

@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { ExternalLink, Github, Eye, Play } from 'lucide-react';
+import { ExternalLink, Github, Eye, Play, Building2 } from 'lucide-react';
 import { projects } from '../../data/projects';
+import { socialLinks } from '../../data/social';
 import VideoPopup from '../VideoPopup';
 import { useTranslation } from '../../contexts/TranslationContext';
+import { Project } from '../../types';
 
 const Projects: React.FC = () => {
   const { t } = useTranslation();
@@ -20,7 +22,9 @@ const Projects: React.FC = () => {
     description: ''
   });
 
-  const openVideo = (project: any) => {
+  const openVideo = (project: Project) => {
+    if (!project.videoUrl) return;
+
     const getTranslatedTitle = () => {
       if (!project.translationKey) return project.title;
       const translated = t(`projects.${project.translationKey}.title`);
@@ -103,11 +107,20 @@ const Projects: React.FC = () => {
                       </div>
                     </div>
                   </>
+                ) : project.image ? (
+                  <>
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+                  </>
                 ) : (
                   <>
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                     <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="text-6xl opacity-20">💻</div>
+                      <Building2 className="h-16 w-16 text-primary-400 opacity-40" />
                     </div>
                   </>
                 )}
@@ -231,15 +244,26 @@ const Projects: React.FC = () => {
             <p className="text-primary-100 mb-6 max-w-2xl mx-auto">
               {t('projects.cta.description')}
             </p>
-            <a
-              href="https://github.com/iagovilela"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center bg-white text-primary-600 font-semibold py-3 px-8 rounded-lg hover:bg-primary-50 transition-colors"
-            >
-              <Github className="h-5 w-5 mr-2" />
-              {t('projects.cta.button')}
-            </a>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href={socialLinks.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center bg-white text-primary-600 font-semibold py-3 px-8 rounded-lg hover:bg-primary-50 transition-colors"
+              >
+                <Github className="h-5 w-5 mr-2" />
+                {t('projects.cta.button')}
+              </a>
+              <a
+                href={socialLinks.energon}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center bg-primary-800/40 border border-white/30 text-white font-semibold py-3 px-8 rounded-lg hover:bg-primary-800/60 transition-colors"
+              >
+                <Building2 className="h-5 w-5 mr-2" />
+                {t('projects.cta.company')}
+              </a>
+            </div>
           </div>
         </motion.div>
       </div>

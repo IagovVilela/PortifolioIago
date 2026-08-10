@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, Send, Github, Linkedin } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, Github, Linkedin, Building2 } from 'lucide-react';
 import { ContactForm } from '../../types';
 import { sendEmailFormspree } from '../../services/emailServiceAlternative';
 import { useTranslation } from '../../contexts/TranslationContext';
+import { socialLinks } from '../../data/social';
 
 const Contact: React.FC = () => {
   const { t } = useTranslation();
@@ -55,14 +56,20 @@ const Contact: React.FC = () => {
     {
       icon: Mail,
       title: t('contact.info.email'),
-      value: 'iagovventura@gmail.com',
-      href: 'mailto:iagovventura@gmail.com'
+      value: socialLinks.emailAddress,
+      href: socialLinks.email
     },
     {
       icon: Phone,
       title: t('contact.info.phone'),
-      value: '+55 (12) 99637-3335',
-      href: 'tel:+5512996373335'
+      value: socialLinks.phoneDisplay,
+      href: socialLinks.phone
+    },
+    {
+      icon: Building2,
+      title: t('contact.info.company'),
+      value: 'Energon',
+      href: socialLinks.energon
     },
     {
       icon: MapPin,
@@ -72,18 +79,24 @@ const Contact: React.FC = () => {
     }
   ];
 
-  const socialLinks = [
+  const networkLinks = [
     {
       icon: Github,
       name: 'GitHub',
-      href: 'https://github.com/IagovVilela',
-      color: 'hover:bg-gray-800'
+      href: socialLinks.github,
+      color: 'text-secondary-700 hover:bg-gray-800 hover:text-white'
     },
     {
       icon: Linkedin,
       name: 'LinkedIn',
-      href: 'https://www.linkedin.com/feed/?trk=sem-ga_campid.12619604099_asid.149519181115_crid.725790844702_kw.linkedin_d.c_tid.kwd-148086543_n.g_mt.e_geo.9100218',
-      color: 'hover:bg-blue-600'
+      href: socialLinks.linkedin,
+      color: 'text-blue-600 hover:bg-blue-600 hover:text-white'
+    },
+    {
+      icon: Building2,
+      name: 'Energon',
+      href: socialLinks.energon,
+      color: 'text-primary-600 hover:bg-primary-600 hover:text-white'
     }
   ];
 
@@ -122,6 +135,8 @@ const Contact: React.FC = () => {
                 <motion.a
                   key={index}
                   href={info.href}
+                  target={info.href.startsWith('http') ? '_blank' : undefined}
+                  rel={info.href.startsWith('http') ? 'noopener noreferrer' : undefined}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.4, delay: index * 0.1 }}
@@ -145,18 +160,20 @@ const Contact: React.FC = () => {
                 {t('contact.social.title')}
               </h4>
               <div className="flex space-x-4">
-                {socialLinks.map((social, index) => (
+                {networkLinks.map((social, index) => (
                   <motion.a
                     key={index}
                     href={social.href}
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label={social.name}
+                    title={social.name}
                     initial={{ opacity: 0, scale: 0.8 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     whileHover={{ scale: 1.1 }}
                     transition={{ duration: 0.3, delay: index * 0.1 }}
                     viewport={{ once: true }}
-                    className={`bg-white p-3 rounded-lg shadow-md ${social.color} text-white transition-all duration-200`}
+                    className={`bg-white p-3 rounded-lg shadow-md ${social.color} transition-all duration-200`}
                   >
                     <social.icon className="h-5 w-5" />
                   </motion.a>

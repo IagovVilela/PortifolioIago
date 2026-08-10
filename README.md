@@ -51,8 +51,9 @@ npm test
 ## 📧 **Contato**
 
 - **Email**: iagovventura@gmail.com
-- **LinkedIn**: [Iago Vilela](https://www.linkedin.com/in/iago-vilela)
+- **LinkedIn**: [Iago Vilela](https://www.linkedin.com/in/iago-vilela-2a9584272)
 - **GitHub**: [@IagovVilela](https://github.com/IagovVilela)
+- **Empresa**: [Energon](https://energon.up.railway.app)
 
 ## 📄 **Licença**
 
